@@ -1,0 +1,55 @@
+body {
+    background-color: bisque;
+}
+
+.wrapper {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    grid-gap: 0.5em;
+    grid-template-areas: 
+        "one one one"
+        "two three three"
+        "two four five "
+        "six six six";
+}
+
+.wrapper div {
+    color: white;
+    padding: 1em;
+    border: 1px solid #000;
+}
+
+.box2, .box4, .box6 {
+    color: black !important;
+}
+
+.box1 {
+    grid-area: one;
+    background-color: red;
+}
+
+.box2 {
+    grid-area: two;
+    background-color: yellow;
+}
+
+.box3 {
+    grid-area: three;
+    background-color: green;
+}
+
+.box4 {
+    grid-area: four;
+    background-color: #00ddff;
+}
+
+.box5 {
+    grid-area: five;
+    background-color: blue;
+}
+
+.box6 {
+    grid-area: six;
+    background-color: pink;
+}
