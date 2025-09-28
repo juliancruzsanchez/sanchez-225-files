@@ -1,5 +1,15 @@
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&family=Playfair+Display&display=swap');
 
+html, body {
+    height: 100vh;
+    width: 100vw;
+    margin: 0;
+    padding: 0;
+}
+
+::-webkit-scrollbar {
+    display: none; /* Hides the scrollbar visually */
+  }
 
 /*GLOBAL*/
 body {
@@ -42,4 +52,38 @@ margin-right: 10px;
 
 img.dibley {
     max-width: 100%
+}
+
+.carousel-caption {
+    background: rgba(0, 0, 0, 0.7);
+    padding: 10px 15px;
+    border-radius: 5px;
+    bottom: 40px;
+    left: 10px;
+    right: 10px;
+    text-align: center;
+}
+
+@media (max-width: 767.98px) {
+    main.container-fluid {
+        width: 100%;
+        padding: 0;
+        margin: 0;
+    }
+    
+    #jcCarousel {
+        width: 100vw;
+        margin-left: calc(-50vw + 50%);
+        margin-right: calc(-50vw + 50%);
+    }
+    
+    .carousel-caption h5 {
+        font-size: 1.2rem;
+        margin-bottom: 5px;
+    }
+    
+    .carousel-caption p {
+        font-size: 0.9rem;
+        margin-bottom: 0;
+    }
 }
